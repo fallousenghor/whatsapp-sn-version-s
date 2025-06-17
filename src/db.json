@@ -1,130 +1,101 @@
 {
-  "utilisateurs": [
+  "users": [
     {
-      "id": "876e",
-      "prenom": "Fallou",
-      "nom": "Senghor",
-      "telephone": "+221782463262"
+      "id": "user1",
+      "firstName": "Fallou",
+      "lastName": "Senghor",
+      "phone": "+221782463262",
+      "avatar": null,
+      "status": "Salut ! J'utilise WhatsApp.",
+      "lastSeen": "2025-01-17T10:30:00.000Z",
+      "isOnline": true,
+      "createdAt": "2025-01-17T08:00:00.000Z"
     },
     {
-      "id": "536f",
-      "prenom": "awa",
-      "nom": "ba",
-      "telephone": "+221777443663"
+      "id": "user2",
+      "firstName": "Awa",
+      "lastName": "Ba",
+      "phone": "+221777443663",
+      "avatar": null,
+      "status": "Disponible",
+      "lastSeen": "2025-01-17T10:25:00.000Z",
+      "isOnline": false,
+      "createdAt": "2025-01-17T08:00:00.000Z"
     }
   ],
   "contacts": [
     {
-      "id": "e455",
-      "prenom": "awa",
-      "nom": "ba",
-      "telephone": "+221777443663",
-      "userId": "876e",
-      "sync": true,
-      "createdAt": "2025-06-17T12:08:42.149Z",
-      "blocked": false
+      "id": "contact1",
+      "userId": "user1",
+      "contactUserId": "user2",
+      "name": "Awa Ba",
+      "phone": "+221777443663",
+      "isBlocked": false,
+      "isFavorite": false,
+      "createdAt": "2025-01-17T08:30:00.000Z"
     },
     {
-      "id": "f01b",
-      "prenom": "khouss",
-      "nom": "ngomp",
-      "telephone": "+221777007740",
-      "userId": "876e",
-      "sync": true,
-      "createdAt": "2025-06-17T12:09:45.953Z",
-      "blocked": false
-    },
-    {
-      "id": "e817",
-      "prenom": "Fallou",
-      "nom": "Senghor",
-      "telephone": "+221782463262",
-      "userId": "536f",
-      "sync": true,
-      "createdAt": "2025-06-17T12:14:43.057Z",
-      "blocked": false
-    },
-    {
-      "id": "735c",
-      "prenom": "khouss",
-      "nom": "ngom",
-      "telephone": "+221777007740",
-      "userId": "536f",
-      "sync": true,
-      "createdAt": "2025-06-17T12:15:05.282Z",
-      "blocked": false
+      "id": "contact2",
+      "userId": "user2",
+      "contactUserId": "user1",
+      "name": "Fallou Senghor",
+      "phone": "+221782463262",
+      "isBlocked": false,
+      "isFavorite": false,
+      "createdAt": "2025-01-17T08:30:00.000Z"
     }
   ],
-  "messages": [],
-  "groupes": [
+  "conversations": [
     {
-      "id": "b0c1",
-      "nom": "odc",
-      "adminId": "876e",
-      "membres": [
-        "e455",
-        "f01b"
-      ],
-      "createdAt": "2025-06-17T12:09:57.964Z",
-      "admins": [
-        "876e",
-        "e455"
-      ],
-      "closed": false
-    },
-    {
-      "id": "4eaa",
-      "nom": "famille",
-      "adminId": "536f",
-      "membres": [
-        "e817",
-        "735c"
-      ],
-      "createdAt": "2025-06-17T12:15:19.309Z",
-      "admins": [
-        "536f"
-      ],
-      "closed": false
+      "id": "conv1",
+      "type": "private",
+      "participants": ["user1", "user2"],
+      "lastMessage": {
+        "id": "msg1",
+        "content": "Salut, comment ça va ?",
+        "senderId": "user2",
+        "timestamp": "2025-01-17T10:25:00.000Z",
+        "type": "text"
+      },
+      "unreadCount": {
+        "user1": 1,
+        "user2": 0
+      },
+      "createdAt": "2025-01-17T08:30:00.000Z",
+      "updatedAt": "2025-01-17T10:25:00.000Z"
     }
   ],
-  "discussions": [
+  "groups": [
     {
-      "id": "ec58",
-      "contactId": "e817",
-      "participants": [
-        "536f",
-        "e817"
-      ],
-      "lastMessage": {
-        "content": "fghuiop",
-        "senderId": "536f",
-        "timestamp": "2025-06-17T12:16:29.628Z",
-        "status": "sent"
-      },
-      "hasUnreadMessages": false,
-      "lastActivity": "2025-06-17T12:16:29.628Z",
-      "createdBy": "536f",
-      "isFavorite": false,
-      "isArchived": false
-    },
-    {
-      "id": "b97e",
-      "groupId": "4eaa",
-      "isGroup": true,
-      "participants": [
-        "536f"
-      ],
-      "lastMessage": {
-        "content": "vf",
-        "senderId": "536f",
-        "timestamp": "2025-06-17T12:16:04.996Z",
-        "status": "sent"
-      },
-      "hasUnreadMessages": false,
-      "lastActivity": "2025-06-17T12:16:04.996Z",
-      "createdBy": "536f",
-      "isFavorite": false,
-      "isArchived": false
+      "id": "group1",
+      "name": "Famille",
+      "description": "Groupe familial",
+      "avatar": null,
+      "adminIds": ["user1"],
+      "memberIds": ["user1", "user2"],
+      "createdBy": "user1",
+      "createdAt": "2025-01-17T09:00:00.000Z",
+      "settings": {
+        "onlyAdminsCanSend": false,
+        "onlyAdminsCanEditInfo": true
+      }
     }
-  ]
+  ],
+  "messages": [
+    {
+      "id": "msg1",
+      "conversationId": "conv1",
+      "senderId": "user2",
+      "content": "Salut, comment ça va ?",
+      "type": "text",
+      "timestamp": "2025-01-17T10:25:00.000Z",
+      "status": "delivered",
+      "replyTo": null,
+      "reactions": {},
+      "isEdited": false,
+      "isDeleted": false
+    }
+  ],
+  "stories": [],
+  "calls": []
 }
