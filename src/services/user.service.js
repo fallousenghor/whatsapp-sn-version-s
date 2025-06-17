@@ -1,5 +1,5 @@
-const BASE_URL = "https://backend-js-server-vrai.onrender.com/utilisateurs";
-// const BASE_URL = "http://localhost:3000/utilisateurs";
+// const BASE_URL = "https://backend-js-server-vrai.onrender.com/utilisateurs";
+const BASE_URL = "http://localhost:3000/utilisateurs";
 
 export async function createUser(user) {
   const res = await fetch(BASE_URL, {

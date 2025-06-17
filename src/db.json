@@ -1,9 +1,130 @@
 {
-  "utilisateurs": [],
-  "contacts": [
-  
+  "utilisateurs": [
+    {
+      "id": "876e",
+      "prenom": "Fallou",
+      "nom": "Senghor",
+      "telephone": "+221782463262"
+    },
+    {
+      "id": "536f",
+      "prenom": "awa",
+      "nom": "ba",
+      "telephone": "+221777443663"
+    }
   ],
+  "contacts": [
+    {
+      "id": "e455",
+      "prenom": "awa",
+      "nom": "ba",
+      "telephone": "+221777443663",
+      "userId": "876e",
+      "sync": true,
+      "createdAt": "2025-06-17T12:08:42.149Z",
+      "blocked": false
+    },
+    {
+      "id": "f01b",
+      "prenom": "khouss",
+      "nom": "ngomp",
+      "telephone": "+221777007740",
+      "userId": "876e",
+      "sync": true,
+      "createdAt": "2025-06-17T12:09:45.953Z",
+      "blocked": false
+    },
+    {
+      "id": "e817",
+      "prenom": "Fallou",
+      "nom": "Senghor",
+      "telephone": "+221782463262",
+      "userId": "536f",
+      "sync": true,
+      "createdAt": "2025-06-17T12:14:43.057Z",
+      "blocked": false
+    },
+    {
+      "id": "735c",
+      "prenom": "khouss",
+      "nom": "ngom",
+      "telephone": "+221777007740",
+      "userId": "536f",
+      "sync": true,
+      "createdAt": "2025-06-17T12:15:05.282Z",
+      "blocked": false
+    }
+  ],
+  "messages": [],
   "groupes": [
-  
+    {
+      "id": "b0c1",
+      "nom": "odc",
+      "adminId": "876e",
+      "membres": [
+        "e455",
+        "f01b"
+      ],
+      "createdAt": "2025-06-17T12:09:57.964Z",
+      "admins": [
+        "876e",
+        "e455"
+      ],
+      "closed": false
+    },
+    {
+      "id": "4eaa",
+      "nom": "famille",
+      "adminId": "536f",
+      "membres": [
+        "e817",
+        "735c"
+      ],
+      "createdAt": "2025-06-17T12:15:19.309Z",
+      "admins": [
+        "536f"
+      ],
+      "closed": false
+    }
+  ],
+  "discussions": [
+    {
+      "id": "ec58",
+      "contactId": "e817",
+      "participants": [
+        "536f",
+        "e817"
+      ],
+      "lastMessage": {
+        "content": "fghuiop",
+        "senderId": "536f",
+        "timestamp": "2025-06-17T12:16:29.628Z",
+        "status": "sent"
+      },
+      "hasUnreadMessages": false,
+      "lastActivity": "2025-06-17T12:16:29.628Z",
+      "createdBy": "536f",
+      "isFavorite": false,
+      "isArchived": false
+    },
+    {
+      "id": "b97e",
+      "groupId": "4eaa",
+      "isGroup": true,
+      "participants": [
+        "536f"
+      ],
+      "lastMessage": {
+        "content": "vf",
+        "senderId": "536f",
+        "timestamp": "2025-06-17T12:16:04.996Z",
+        "status": "sent"
+      },
+      "hasUnreadMessages": false,
+      "lastActivity": "2025-06-17T12:16:04.996Z",
+      "createdBy": "536f",
+      "isFavorite": false,
+      "isArchived": false
+    }
   ]
 }

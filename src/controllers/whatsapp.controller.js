@@ -198,7 +198,7 @@ async function displayGroupes() {
             );
             item.classList.add('border-green-500', 'bg-gray-750');
             
-            notifications.success(`Conversation avec le groupe ${groupe.nom} ouverte`);
+            // notifications.success(`Conversation avec le groupe ${groupe.nom} ouverte`);
           }
         } catch (error) {
           console.error('Erreur ouverture groupe:', error);
@@ -477,7 +477,7 @@ export function setupContactSelection() {
 
         try {
           await setCurrentConversation(discussionType, discussionId, discussionName);
-          notifications.success(`Conversation avec ${discussionName} ouverte`);
+          // notifications.success(`Conversation avec ${discussionName} ouverte`);
         } catch (error) {
           console.error("Erreur:", error);
           notifications.error("Erreur lors de l'ouverture de la conversation");
@@ -508,7 +508,7 @@ export function setupContactSelection() {
           // Définir la conversation courante
           await setCurrentConversation('contact', contact.id, `${contact.prenom} ${contact.nom}`);
           
-          notifications.success(`Conversation avec ${contact.prenom} ${contact.nom} ouverte`);
+          // notifications.success(`Conversation avec ${contact.prenom} ${contact.nom} ouverte`);
         }
       } catch (error) {
         console.error("Erreur:", error);

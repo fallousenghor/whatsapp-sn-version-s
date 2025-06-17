@@ -1,5 +1,5 @@
-const BASE_URL = "https://backend-js-server-vrai.onrender.com/discussions";
-// const BASE_URL = "http://localhost:3000/discussions";
+// const BASE_URL = "https://backend-js-server-vrai.onrender.com/discussions";
+const BASE_URL = "http://localhost:3000/discussions";
 
 async function fetchData(url, options = {}) {
   const response = await fetch(url, options);

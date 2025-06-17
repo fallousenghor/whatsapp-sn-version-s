@@ -1,5 +1,5 @@
-const BASE_URL = "https://backend-js-server-vrai.onrender.com/groupes";
-// const BASE_URL = "http://localhost:3000/groupes";
+// const BASE_URL = "https://backend-js-server-vrai.onrender.com/groupes";
+const BASE_URL = "http://localhost:3000/groupes";
 
 async function fetchData(url, options = {}) {
   const response = await fetch(url, options);

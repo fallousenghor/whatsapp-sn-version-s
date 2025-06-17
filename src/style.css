@@ -89,10 +89,10 @@ body {
   font-weight: bold;
 }
 
-/* Styles pour les notifications */
 .notification-item {
   transform: translateX(100%);
   opacity: 0;
+   width: 400px;
 }
 
 .notification-item.translate-x-0 {
@@ -103,16 +103,17 @@ body {
   opacity: 1;
 }
 
-/* Styles pour les modales */
 .modal-backdrop {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+ 
 }
 
 .modal-content {
   opacity: 0;
   transform: translateY(4px) scale(0.95);
   transition: all 0.3s ease-in-out;
+  
 }
 
 .modal-content.opacity-100 {
